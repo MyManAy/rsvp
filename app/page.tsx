@@ -43,7 +43,7 @@ export default function Home() {
                   });
 
                   if (!error) {
-                    resend.emails.send({
+                    await resend.emails.send({
                       from: "nithin.monni@lumedebate.com",
                       to: formData.get("email") as string,
                       subject: `${formData.get(
