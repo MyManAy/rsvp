@@ -70,6 +70,17 @@ export const ConfirmationDetails = ({
                 {"Google Maps Location"}
               </Link>
             </Text>
+            <Text className="text-black text-[14px] leading-[24px]">
+              Add to calendar:{" "}
+              <Link
+                href={
+                  "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MHQ5YjlpNWY4OWZ1c25mdjJqbGdsbzF1Nmsgbml0aGluLm1vbm5pQG0&tmsrc=nithin.monni%40gmail.com"
+                }
+                className="text-blue-600 no-underline"
+              >
+                {"Google Calendar Invite"}
+              </Link>
+            </Text>
             <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
             <Text className="text-[#666666] text-[12px] leading-[24px]">
               This invitation was intended for{" "}
