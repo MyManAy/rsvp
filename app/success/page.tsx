@@ -9,7 +9,9 @@ export default function Info() {
         </div>
         <Image width={100} height={100} src={"/email.png"} alt={"Email"} />
         <div className="text-black text-4xl font-medium">
-          {"You May Now Close This Tab"}
+          {
+            "You may now close this tab. RSVP details will be forwarded to the email provided."
+          }
         </div>
       </div>
     </main>
