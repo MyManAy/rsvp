@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import { supabase } from "@/supabase/adminSupabase";
+import { Resend } from "resend";
+import ConfirmationDetails from "@/emails/confirmation-details";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default function Home() {
   return (
@@ -13,7 +17,7 @@ export default function Home() {
             </div>
             <div className="relative flex place-items-center p-8">
               <Image
-                src="/Black And Grey Classic Photo Graduation Announcement.png"
+                src="/Black-And-Grey-Classic-Photo-Graduation-Announcement.png"
                 alt="Vercel Logo"
                 width={500}
                 height={24}
@@ -39,6 +43,18 @@ export default function Home() {
                   });
 
                   if (!error) {
+                    await resend.emails.send({
+                      from: "nithin.monni@lumedebate.com",
+                      to: formData.get("email") as string,
+                      subject: `${formData.get(
+                        "name"
+                      )}, Nithin Monni got your RSVP`,
+                      react: (
+                        <ConfirmationDetails
+                          recipient={formData.get("name") as string}
+                        />
+                      ),
+                    });
                     redirect("/success");
                   }
                 }}
