@@ -12,22 +12,22 @@ export default function Home() {
       <div className=" mx-auto p-4">
         <div className="grid grid-cols-3 gap-4">
           <div className="col-span-1 p-4 bg-white shadow-md rounded-lg">
-            <div className="relative flex place-items-center text-4xl font-extrabold ">
+            <div className="relative flex place-items-center font-extrabold text-2xl lg:text-4xl ">
               You're Invited!
             </div>
-            <div className="relative flex place-items-center p-8">
+            <div className="relative flex place-items-center lg:p-8 md:p-4">
               <Image
                 src="/Black-And-Grey-Classic-Photo-Graduation-Announcement.png"
-                alt="Vercel Logo"
+                alt="Grad Party Photo"
                 width={500}
                 height={24}
-                className="rounded-lg"
+                className="rounded-lg max"
                 priority
               />
             </div>
           </div>
           <div className="col-span-2 p-4 bg-white shadow-md rounded-lg">
-            <div className="relative flex place-items-center text-4xl font-extrabold pb-8 ">
+            <div className="relative flex place-items-center font-extrabold pb-8 text-2xl lg:text-4xl">
               RSVP Form
             </div>
             <div className="max-w-sm mx-auto bg-white p-6 shadow-md rounded-lg">
