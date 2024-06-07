@@ -53,7 +53,7 @@ export const ConfirmationDetails = ({
             <Section>
               <Row>
                 <Img
-                  src="https://www.nithinmonni.com/Black-And-Grey-Classic-Photo-Graduation-Announcement.png"
+                  src="https://www.nithinmonnirsvp.vercel.app/Black-And-Grey-Classic-Photo-Graduation-Announcement.png"
                   height="500"
                 />
               </Row>
