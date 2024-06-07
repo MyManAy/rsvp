@@ -53,7 +53,7 @@ export const ConfirmationDetails = ({
             <Section>
               <Row>
                 <Img
-                  src={`${baseUrl}/Black-And-Grey-Classic-Photo-Graduation-Announcement.png`}
+                  src="https://photos.app.goo.gl/FyCbBub6S6HTA4NF9"
                   height="500"
                 />
               </Row>
