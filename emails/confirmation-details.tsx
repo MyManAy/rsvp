@@ -74,7 +74,8 @@ export const ConfirmationDetails = ({
             <Text className="text-[#666666] text-[12px] leading-[24px]">
               This invitation was intended for{" "}
               <span className="text-black">{recipient}</span>. This invite was
-              sent from <span className="text-black">{"nithinmonni.com"}</span>{" "}
+              sent from{" "}
+              <span className="text-black">{"nithinmonnirsvp.vercel.app"}</span>{" "}
               located in <span className="text-black">{"Edina, MN"}</span>. If
               you were not expecting this invitation, you can ignore this email.
             </Text>
