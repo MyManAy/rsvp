@@ -53,7 +53,7 @@ export const ConfirmationDetails = ({
             <Section>
               <Row>
                 <Img
-                  src="https://photos.app.goo.gl/FyCbBub6S6HTA4NF9"
+                  src="https://www.nithinmonni.com/Black-And-Grey-Classic-Photo-Graduation-Announcement.png"
                   height="500"
                 />
               </Row>
