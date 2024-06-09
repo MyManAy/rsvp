@@ -74,7 +74,7 @@ export default function Home() {
                 </div>
                 <div className="mb-4">
                   <label className="block text-gray-700 font-bold mb-2">
-                    Number of Adults Attending
+                    Number of Adults (Age 13+) Attending
                   </label>
                   <input
                     type="number"
@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
                 <div className="mb-4">
                   <label className="block text-gray-700 font-bold mb-2">
-                    Number of Children Attending
+                    Number of Children (Age 5-12) Attending
                   </label>
                   <input
                     type="number"
