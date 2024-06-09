@@ -43,13 +43,39 @@ export const ConfirmationDetails = ({
             </Text>
             <Text className="text-black text-[14px] leading-[24px]">
               <div className="pb-6">
-                <strong>Nithin</strong> has invited you to his graduation party
-                on{" "}
+                Thank you for your RSVP. Please save the date:
               </div>
               <div>
                 <strong>Friday, June 21st at 6pm</strong>.
               </div>
             </Text>
+            <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
+            <Text className="text-black text-[18px] leading-[24px]">
+              Here are the program details:
+            </Text>
+            <ul>
+              <li>
+                <Text className="text-black text-[14px] leading-[24px]">
+                  6:00 pm - 6:30 pm: Meet and Greet
+                </Text>
+              </li>
+              <li>
+                <Text className="text-black text-[14px] leading-[24px]">
+                  6:30 pm - 7:00 pm: Tea and snacks
+                </Text>
+              </li>
+              <li>
+                <Text className="text-black text-[14px] leading-[24px]">
+                  7:00 pm - 7:30 pm: Cake cutting
+                </Text>
+              </li>
+              <li>
+                <Text className="text-black text-[14px] leading-[24px]">
+                  7:30 pm - 9:00 pm: Dinner
+                </Text>
+              </li>
+            </ul>
+            <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
             <Section>
               <Row>
                 <Img
@@ -98,7 +124,7 @@ export const ConfirmationDetails = ({
 };
 
 ConfirmationDetails.PreviewProps = {
-  recipient: "Nithin Monni",
+  recipient: "Jim Joe",
 } as VercelInviteUserEmailProps;
 
 export default ConfirmationDetails;
