@@ -19,9 +19,7 @@ interface VercelInviteUserEmailProps {
   recipient?: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
+const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
 export const ConfirmationDetails = ({
   recipient,
