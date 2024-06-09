@@ -37,7 +37,7 @@ export const ConfirmationDetails = ({
               Join <strong>{"Nithin Monni"}</strong>
             </Heading>
             <Text className="text-black text-[14px] leading-[24px]">
-              Hello {recipient},
+              Hello <strong>{recipient}</strong>,
             </Text>
             <Text className="text-black text-[14px] leading-[24px]">
               <div className="pb-6">
