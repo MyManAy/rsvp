@@ -39,7 +39,7 @@ export default function Home() {
                     comment: formData.get("comment") as string,
                     num_adults: formData.get("adults"),
                     num_children: formData.get("children"),
-                    email: formData.get("email") as string,
+                    email: (formData.get("email") as string).toLowerCase(),
                   });
 
                   if (!error) {
