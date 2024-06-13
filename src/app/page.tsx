@@ -34,13 +34,15 @@ export default function Home() {
               <form
                 action={async (formData) => {
                   "use server";
-                  const { error } = await supabase.from("attendants").insert({
-                    party_name: formData.get("name") as string,
-                    comment: formData.get("comment") as string,
-                    num_adults: formData.get("adults"),
-                    num_children: formData.get("children"),
-                    email: (formData.get("email") as string).toLowerCase(),
-                  });
+                  const { error } = await supabase
+                    .from("attendants")
+                    .insert<any>({
+                      party_name: formData,
+                      comment: formData.get("comment") as string,
+                      num_adults: formData.get("adults"),
+                      num_children: formData.get("children"),
+                      email: (formData.get("email") as string).toLowerCase(),
+                    });
 
                   if (!error) {
                     await resend.emails.send({
